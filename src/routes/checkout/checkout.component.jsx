@@ -4,7 +4,7 @@ import CheckoutItem from "../../components/checkout-item/checkout-item.component
 import {CheckoutContainer, CheckoutHeader, HeaderBlock, Total} from "./checkout.styles.jsx";
 
 const Checkout = () => {
-  const { cartItems, priceTotal} =
+  const { cartItems, cartPriceTotal} =
     useContext(CartContext);
   return (
     
@@ -27,7 +27,7 @@ const Checkout = () => {
         );
       })}
 
-      <Total>Total: ${priceTotal}</Total>
+      <Total>Total: ${cartPriceTotal}</Total>
     </CheckoutContainer>
   );
 };
