@@ -20,4 +20,4 @@ export default function Button({children, buttonType, ...otherProps}){
             {children}
         </CustomButton>
     )
-}
+} 
